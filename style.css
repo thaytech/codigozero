@@ -7,7 +7,7 @@
 /* Estilos Globais */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte do texto */
-    background-color: rgb(194, 184, 184); /* Cor do fundo */
+    background-image: url('green.jpg');
     color: darkslategray; /* Cor do texto */
     display: flex; /* Libera o conteúdo interno do body */
     justify-content: center;  /* Centralizar o conteúdo na horizontal */
@@ -16,7 +16,7 @@ body {
 }
 /* Formatação da caixa do formulário */
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 20px; /* Margem interna da caixa */
     border-radius: 10px; /* Borda arredondada */
     box-shadow: 5px  10px rgba(47, 79, 79, 0.3);   /* Sombra */
@@ -76,6 +76,7 @@ button{
     font-size: 16px;
     width: 100%;
     cursor: pointer;
+
 
 
 
