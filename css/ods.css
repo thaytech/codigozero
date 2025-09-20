@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #d40000; 
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.logo .preto {
+    color: black;
+}
+
+.logo .vermelho {
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: #900000; 
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #700000;
+}
+
+/* Área principal */
+.principal {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.postagem h2 {
+    color: #d40000;
+    margin-bottom: 5px;
+}
+
+.data-postagem {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.postagem img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Barra lateral */
+.lateral {
+    width: 30%;
+    padding: 20px;
+}
+
+.lateral-box {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.lateral-box h3 {
+    color: #d40000;
+    margin-bottom: 10px;
+}
+
+.lateral-box a {
+    color: #d40000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.lateral-box a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #d40000;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+}
+
