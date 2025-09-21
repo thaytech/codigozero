@@ -1,5 +1,3 @@
-# Programa que verifica a temperatura e imprime uma mensagem apropriada
-
 # Entrada de dados
 temperatura = float(input("Digite a temperatura em Celsius: "))
 

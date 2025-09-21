@@ -1,5 +1,3 @@
-# Programa que recebe informações sobre um carro e as imprime formatadas
-
 # Criação das variáveis que recebem os valores do usuário
 nome_carro = input("Digite o nome do carro: ")
 valor_carro = float(input("Digite o valor do carro: "))
