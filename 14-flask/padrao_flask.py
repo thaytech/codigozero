@@ -1,4 +1,4 @@
-from flask import Flask      # importa a biblioteca
+from flask import Flask     # importa a biblioteca
 
 app = Flask (__name__)      # cria a aplicação
 
