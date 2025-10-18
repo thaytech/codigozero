@@ -1,0 +1,13 @@
+CREATE DATABASE aula;
+
+CREATE TABLE cliente(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    telefone VARCHAR (20) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    data_nascimento DATE NOT NULL,
+    senha VARCHAR(255) NOT NULL
+    );
+
+
+ALTER TABLE cliente
+ADD COLUMN nome VARCHAR(100) NOT NULL;
