@@ -3,7 +3,7 @@ import os
 
 csv_path= 'sales.csv'
 
-if not os.path.exists(csv_path) or os.path.getsize()==0:
+if not os.path.exists(csv_path):
 
     data= [{'date':'2025-12-01',
             'product': 'camisa',
@@ -64,6 +64,18 @@ if not os.path.exists(csv_path) or os.path.getsize()==0:
 
          ]
     
-df_example= pd.DataFrame(data)
-df_example.to_csv(csv_path, index= False)
-print('uhul criou', csv_path)
+    df_example= pd.DataFrame(data)
+    df_example.to_csv(csv_path, index= False)
+    print('uhul criou', csv_path)
+
+df= pd.read_csv(csv_path, parse_dates=['date'])
+
+required= {'date', 'product', 'price', 'quantity'}
+
+if not required.issubset(set(df.columns)):
+    print('as colunas estão erradas')
+
+df['total']=df['price']*df['quantity']
+df[['total']].to_csv('total.csv', index= False)
+print('arquivo criado com sucesso')
+
